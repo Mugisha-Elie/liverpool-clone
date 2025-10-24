@@ -10,7 +10,7 @@
   <script src="src/main.js" defer></script>
 </head>
 <body>
-  <section class="h-screen p-5 bg-position-[80%_50%] md:bg-position-[50%_30%] bg-[url('/public/hero.webp')] bg-cover font-poppins">
+  <section class="h-screen p-5 bg-position-[80%_50%] md:bg-position-[50%_30%] bg-[url('/hero.webp')] bg-cover font-poppins">
 
     <nav class="flex items-center justify-between">
       <header>
@@ -59,7 +59,7 @@
         <button class="hover:underline hover:underline-offset-8 decoration-2 cursor-pointer">About Us <i class="bi bi-chevron-down"></i></button>
       </div>
 
-      <div class="text-white font-poppins flex items-center gap-2">
+      <div class="text-white font-poppins hidden md:flex items-center gap-2">
         <i class="bi bi-search"></i>
         <p class="font-light text-lg tracking-wide hover:underline cursor-pointer">Search the site</p>
       </div>
@@ -67,17 +67,50 @@
 
     <main class="mt-15">
       <div class="border-3 border-white w-max p-5">
-        <h2 class="uppercase text-white text-3xl tracking-wide font-extrabold">make 2026 your year</h2>
+        <h2 class="uppercase text-white md:text-3xl text-xl tracking-wide font-extrabold">make 2026 your year</h2>
       </div>
 
-      <div class="border-3 border-white w-1/2 p-5">
+      <div class="border-3 border-white md:w-1/2 p-5">
         <p class="text-white text-2xl tracking-3">We offer a range of master’s courses in business and management, allied health, computer science and engineering all available to start in January 2026.</p>
       </div>
 
-      <div class="border border-white w-1/4 p-5 mt-5 mb-5">
-        <h2 class="text-white font-extralight text-lg tracking-3 hover:underline">Discover our <span class="block">January course <i class="bi bi-chevron-right"></i></span></h2>
+      <div class="border border-white md:w-1/4 p-5 mt-5 mb-5">
+        <h2 class="text-white font-extralight text-md md:text-lg tracking-3 hover:underline">Discover our <span class="md:block">January course <i class="bi bi-chevron-right"></i></span></h2>
       </div>
     </main>
+  </section>
+
+  <section class="bg-[#212B58] py-8 px-10 h-max text-white flex flex-col gap-7 font-poppins ">
+  
+    <div class="flex flex-col md:flex-row gap-5 items-start justify-between">
+      <h2 class="font-bold text-lg">Find your course</h2>
+
+      
+      <input type="text" class="bg-white h-[58px] flex-2">
+
+      <button class="inline border border-white py-4 px-5 cursor-pointer hover:underline">Search</button>
+
+      
+
+      <div class="hidden md:flex flex-col gap-3 flex-1">
+        <a class="cursor-pointer underline" href="">Courses by A-Z</a>
+        <a class="cursor-pointer underline" href="">Courses by subject</a>
+      </div>
+    </div>
+
+    <div class="flex flex-col md:flex-row gap-5 justify-center items-start md:mr-65 text-lg">
+        <label for="undergraduate" class="flex items-center gap-2">
+          <input class="h-6 w-6 accent-[#212B58] cursor-pointer" type="radio" name="level" id="undergraduate"> Undergraduate
+        </label>
+
+        <label for="taught" class="flex items-center gap-2">
+          <input class="h-6 w-6 accent-[#212B58] cursor-pointer" type="radio" name="level" id="taught"> Postgraduate taught
+        </label>
+        <label for="research" class="flex items-center gap-2">
+          <input class="h-6 w-6 accent-[#212B58]" type="radio" name="level" id="research"> Postgraduate research
+        </label>
+      </div>
+    
   </section>
 </body>
 </html>
